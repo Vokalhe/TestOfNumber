@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <segmentedControl opaque="NO" tag="9" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" translatesAutoresizingMaskIntoConstraints="NO" id="h2A-hy-4pF">
+                                <rect key="frame" x="240" y="28" width="340" height="29"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <segments>
+                                    <segment title="0"/>
+                                    <segment title="1"/>
+                                    <segment title="2"/>
+                                    <segment title="3"/>
+                                    <segment title="4"/>
+                                    <segment title="5"/>
+                                    <segment title="6"/>
+                                    <segment title="7"/>
+                                    <segment title="8"/>
+                                    <segment title="9"/>
+                                </segments>
+                                <color key="tintColor" red="0.18862452651515149" green="0.18862452651515149" blue="0.18862452651515149" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="valueChangedSegmentOfNumber:" destination="BYZ-38-t0r" eventType="valueChanged" id="lkr-mf-nLD"/>
+                                </connections>
+                            </segmentedControl>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Select the degree of number:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RSa-4D-h7R">
+                                <rect key="frame" x="20" y="28" width="205" height="28"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Components of number:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ebw-fP-m1T">
+                                <rect key="frame" x="20" y="77" width="212" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Time calculating: 0 sec." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8PO-Ax-k05">
+                                <rect key="frame" x="20" y="115" width="212" height="31"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <pickerView userInteractionEnabled="NO" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="AIu-jN-AZi">
+                                <rect key="frame" x="20" y="246" width="560" height="90"/>
+                                <color key="backgroundColor" red="0.94053819444444442" green="0.94053819444444442" blue="0.94053819444444442" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="90" id="A4d-3c-lG8"/>
+                                </constraints>
+                            </pickerView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Our sum:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NUG-ym-sMy">
+                                <rect key="frame" x="20" y="208" width="560" height="35"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" editable="NO" textAlignment="right" translatesAutoresizingMaskIntoConstraints="NO" id="bRV-ZT-jSs">
+                                <rect key="frame" x="240" y="77" width="340" height="128"/>
+                                <color key="backgroundColor" red="0.91003787878787878" green="0.91003787878787878" blue="0.91003787878787878" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="AIu-jN-AZi" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="0qh-Kg-0IG"/>
+                            <constraint firstItem="bRV-ZT-jSs" firstAttribute="leading" secondItem="8PO-Ax-k05" secondAttribute="trailing" constant="8" id="3Od-la-afl"/>
+                            <constraint firstItem="bRV-ZT-jSs" firstAttribute="top" secondItem="h2A-hy-4pF" secondAttribute="bottom" constant="21" id="8zD-PD-RbW"/>
+                            <constraint firstItem="NUG-ym-sMy" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="B7C-HG-Ael"/>
+                            <constraint firstItem="bRV-ZT-jSs" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="MRD-5M-cvi"/>
+                            <constraint firstItem="RSa-4D-h7R" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="OAE-fB-Iua"/>
+                            <constraint firstItem="NUG-ym-sMy" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="OpG-56-LE4"/>
+                            <constraint firstItem="h2A-hy-4pF" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="Tnc-gw-bXk"/>
+                            <constraint firstItem="AIu-jN-AZi" firstAttribute="top" secondItem="NUG-ym-sMy" secondAttribute="bottom" constant="3" id="d8G-xb-Gqj"/>
+                            <constraint firstItem="h2A-hy-4pF" firstAttribute="leading" secondItem="RSa-4D-h7R" secondAttribute="trailing" constant="15" id="gCo-JS-R1w"/>
+                            <constraint firstItem="NUG-ym-sMy" firstAttribute="top" secondItem="bRV-ZT-jSs" secondAttribute="bottom" constant="3" id="szs-my-WOl"/>
+                            <constraint firstItem="Ebw-fP-m1T" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="t1s-rH-IMx"/>
+                            <constraint firstItem="AIu-jN-AZi" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="wxZ-fp-9tv"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="AIu-jN-AZi" secondAttribute="bottom" constant="10" id="z50-2I-aDT"/>
+                        </constraints>
+                    </view>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <connections>
+                        <outlet property="componentsOfNumberTextView" destination="bRV-ZT-jSs" id="qQl-iX-RWF"/>
+                        <outlet property="secondLabel" destination="8PO-Ax-k05" id="auw-tT-nha"/>
+                        <outlet property="segmentDegreeOfNumberControl" destination="h2A-hy-4pF" id="58o-Vb-Qdp"/>
+                        <outlet property="sumPickerView" destination="AIu-jN-AZi" id="bbs-b8-5Xy"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="306" y="156"/>
+        </scene>
+    </scenes>
+</document>
